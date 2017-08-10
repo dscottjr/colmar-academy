@@ -30,7 +30,6 @@ html {
   display: block;
   max-width: 100%;
   height: auto;
-
 }
 
 .button {
@@ -172,11 +171,43 @@ header .mobile {
   background-color: lightgray;
 }
 
-.coursection h1 {
-  display: block;
+.coursesection h1 {
+  text-align: center;
 }
 
 .courseline {
   display: flex;
   border: solid thin black;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+}
+
+.course {
+    border: solid thin black;
+    background-color: white;
+    margin: 1rem;
+}
+
+.coursetext {
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* videosection */
+
+.videosection h1 {
+  text-align: center;
+}
+
+.video-container {
+  overflow: hidden;
+}
+
+.video-container video {
+  max-width: 100%;
+  height: auto;
+}
+
+#firstbox {
+  background-color: lightgray;
 }
