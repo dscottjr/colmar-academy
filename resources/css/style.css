@@ -49,6 +49,7 @@ html {
 }
 
 
+
 /* Header */
 
 header {
@@ -97,6 +98,7 @@ header .mobile {
 }
 
 @media only screen and (max-width: 480px) {
+
   header .logo {
     display: none;
   }
@@ -108,6 +110,12 @@ header .mobile {
   header .mobile {
     display: block;
     width: 100%;
+  }
+
+  header .content .mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 
 }
@@ -130,6 +138,38 @@ header .mobile {
 
 #startsection .box2 h1 {
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 480px) {
+
+.common-container {
+  display: flex;
+  flex-direction: column;
+  border: solid thin black;
+  width: 100%;
+}
+
+.box1 {
+  border: solid thin black;
+  max-width: 100%;
+}
+
+/* .image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+
+#startsection .box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border: solid thin black;
+  width: 100%;
+  /* padding-left: 1rem; */
+}
+
 }
 
 /* infosection */
@@ -176,6 +216,51 @@ header .mobile {
   color: blue;
 }
 
+@media only screen and (max-width: 480px) {
+
+#infosection .box1 {
+  display: none;
+}
+
+#infosection .box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border: solid thin black;
+  width: 100%;
+}
+
+.infobox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: solid thin black;
+}
+
+.infobox1 {
+    display: flex;
+    border: solid thin black;
+    width: 100%;
+    padding: 1rem;
+  }
+
+.infobox2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: solid thin black;
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  #lastbox {
+    background-color: white;
+  }
+
+}
+
 /* coursesection */
 
 .coursesection {
@@ -205,6 +290,37 @@ header .mobile {
   margin-bottom: 1.5rem;
 }
 
+.coursection.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+.coursesection.desktop {
+  display: none;
+}
+
+.coursesection.mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.coursesection {
+  background-color: white;
+}
+
+.coursesection.mobile h2 {
+  width: 100%;
+  background-color: lightgray;
+  text-align: left;
+  margin-left: 1rem;
+  margin-bottom: .5rem;
+}
+
+}
+
 /* videosection */
 
 .videosection .box2 {
@@ -232,4 +348,33 @@ header .mobile {
 
 #firstbox {
   background-color: lightgray;
+}
+
+/* Footer */
+
+footer .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  footer .footertext {
+    display: none;
+  }
+
+
+  footer .desktop {
+    display: none;
+  }
+
+  footer .mobile {
+    display: block;
+    width: 100%;
+  }
+
 }
