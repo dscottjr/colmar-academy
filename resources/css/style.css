@@ -2,6 +2,15 @@
 
 html {
   font-size: 16px;
+  font-family: 'Vollkorn', serif;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+h3, h4 {
+  font-weight: normal;
 }
 
 .main-content {
@@ -209,11 +218,14 @@ header .mobile {
 
 #lastbox {
   margin-bottom: 2rem;
-  background-color: lightgray;
 }
 
 .infobox2 a {
   color: blue;
+}
+
+.infobox:hover {
+  background-color: lightgray;
 }
 
 @media only screen and (max-width: 480px) {
@@ -255,9 +267,6 @@ header .mobile {
     padding-left: 1rem;
   }
 
-  #lastbox {
-    background-color: white;
-  }
 
 }
 
@@ -290,7 +299,11 @@ header .mobile {
   margin-bottom: 1.5rem;
 }
 
-.coursection.mobile {
+.course:hover {
+  background-color: lightgray;
+}
+
+.coursesection.mobile {
   display: none;
 }
 
@@ -315,8 +328,15 @@ header .mobile {
   width: 100%;
   background-color: lightgray;
   text-align: left;
-  margin-left: 1rem;
-  margin-bottom: .5rem;
+/*  margin-left: 1rem;
+  margin-bottom: .5rem; */
+  margin: 0;
+  padding: 10px 10px;
+}
+
+.newsbites {
+  display: flex;
+  flex-direction: column;
 }
 
 }
@@ -344,10 +364,6 @@ header .mobile {
 .video-container video {
   max-width: 100%;
   height: auto;
-}
-
-#firstbox {
-  background-color: lightgray;
 }
 
 /* Footer */
